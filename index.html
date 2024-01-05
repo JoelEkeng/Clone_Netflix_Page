@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Cover Page</title>
+    <title>Netflix HomePage</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -14,7 +14,7 @@
 <body>
     <main class="bg-black text-slate-50 flex grid-cols-2 gap-8">
         <!-- Navigation bar -->
-        <nav class=" max-h-7xl w-72 px-5 border-r border-slate-600 shadow-2xl shadow-slate-700">
+        <nav class="max-h-7xl w-full md:w-72 px-5 border-r border-slate-600 shadow-2xl shadow-slate-700">
             <header>
                 <div class="py-2">
                     <img src="img/Logo.png" width="150px" alt="Netflix Logo ">
@@ -23,7 +23,7 @@
                 </div>
             </header>
 
-            <div class="gap-y-12 max-w-9xl mx-auto py-4">
+            <div class="gap-y-12 max-w-full md:max-w-9xl mx-auto py-4">
                 <p class="text-slate-500">News Feed</p><br>
                 <ul role="list" class="flex flex-col space-y-1 gap-y-4">
                     <a href="#browse">
@@ -218,8 +218,10 @@
                     </select>
                 </div><br>
 
-                <!-- Card 1 -->
-                <div class="flex grid-cols-2 gap-8 justify-between px-10">
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 md:px-8 lg:px-16">
+
+                    <!-- Card 1 -->
                     <div class="bg-slate-950 rounded-t-lg">
                         <img src="img/black-history-month-collage.jpg" width="250px " class="h-48 rounded-t-lg ">
                         <h2 class="px-4 text-lg font-bold ">THIS POWER</h2>
