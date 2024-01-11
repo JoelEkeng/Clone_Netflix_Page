@@ -10,48 +10,46 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <main class="contentAuto md:content-visibility-auto lg:content-visibility-auto xl:content-visibility-auto bg-black text-slate-50 flex grid-cols-2 gap-8">
+    <main class="contentAuto md:content-visibility-auto lg:content-visibility-auto xl:content-visibility-auto bg-black text-slate-50 flex grid-cols-2 gap-8 h-full">
         <!-- Navigation bar -->
-        <nav class="max-h-7xl w-full md:w-64 px-5 border-r border-slate-600 shadow-2xl shadow-slate-700">
-            <header>
-                <div class="py-2">
-                    <img src="img/Logo.png" width="150px" alt="Netflix Logo ">
-                </div>
-                <div>
-                </div>
+        <nav class="md:block max-h-7xl w-36 text-xs md:text-sm md:w-64  px-5 border-r border-slate-600 shadow-2xl shadow-slate-700">
+            <div class="py-2">
+                <img src="img/Logo.png" class="w-24 md:w-36" alt="Netflix Logo ">
+            </div>
             </header>
 
             <div class="gap-y-12 max-w-full md:max-w-9xl mx-auto py-4">
                 <p class="text-slate-500">News Feed</p><br>
                 <ul role="list" class="flex flex-col space-y-1 gap-y-4">
                     <a href="#browse">
-                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300  w-36 h-9 space-x-3 ">
+                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 w-30 h-7 md:w-36 md:h-9 space-x-3 ">
                             <div><i class="fa-solid fa-compass "></i></div>
                             <div><p>Browse</p></div>
                         </button>
                     </a>
                     <li>
-                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl w-36 h-9 space-x-2 ">
+                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 w-30 h-7 md:w-36 md:h-9 space-x-2 ">
                             <div><i class="fa-solid fa-arrow-trend-up "></i></div>
                             <div><p>Trending</p></div>
                         </button></li>
                     <li>
-                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl w-36 h-9 space-x-3 ">
+                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 w-30 h-7 md:w-36 md:h-9 space-x-3 ">
                                 <div><i class="fa-regular fa-user "></i></div>
                                 <div><p>Following</p></div>
                         </button>
                     </li>
                     <li>
-                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl w-36 h-9 space-x-2 ">
+                        <button class="px-4 py-1 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 w-30 h-7 md:w-36 md:h-9 space-x-2 ">
                                 <div><i class="fa-solid fa-video "></i></div>
                                 <div><p>Your videos</p></div>
                         </button>
                     </li>
                     <li>
-                        <button class="px-4 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl w-36 h-9 space-x-3 ">
+                        <button class="px-4 flex flex-row bg-transparent text-white text-l font-medium hover:bg-red-600 hover:rounded-2xl active:bg-red-700 focus:outline-none focus:ring focus:ring-red-300 w-30 h-7 md:w-36 md:h-9 space-x-3 ">
                             <div><i class="fa-solid fa-list "></i></div>
                             <div><p>Playlist</p></div>
                         </button>
@@ -61,11 +59,11 @@
 
             <!-- User Profiles -->
 
-            <div class="py-4 ">
+            <div class="py-4 text-xs">
                 <p class="text-slate-500 ">Following <span class="px-12 "><a href="# " class="text-red-700 ">All</a></span></p>
                 <ul class="w-full ">
                     <li>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-1 ">
+                        <div class="px-4 rounded-xl shadow-lg space-y-2 py-4 flex sm:space-y-0 sm:space-x1 ">
                             <img class="mx-auto h-5 w-5 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-justin-shaifer-1222271.jpg" alt="Woman 's Face" />
                             <p class="text-xs text-slate-500">
                                 Adam S
@@ -76,26 +74,21 @@
                         </div>
                     </li>
                     <li>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-1 ">
+                        <div class="px-4 rounded-xl shadow-lg space-y-2 py-4 flex sm:space-y-0 sm:space-x-1 ">
                             <img class="mx-auto h-5 w-5 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-stefan-stefancik-91227.jpg" alt="Woman 's Face " />
                             <p class="text-xs text-slate-500 ">
                                 Noah C
                             </p>
-                            <!-- <span class="px-8 "><svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 " stroke-width="1.5 " stroke="currentColor " class="w-4 h-4 "> -->
-                            <!-- <path stroke-linecap="round " stroke-linejoin="round " d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 -->
-                            <!-- 0 0 1 1.06 0Z " /> -->
-                            <!-- </svg></span> -->
-                            <!-- </div> -->
-                            <span class="relative left-9 flex h-2 w-2">
+                            <span class="relative left-7 flex h-3 w-3">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-700"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-700"></span>
                             </span>
                     </li>
                     <li>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-1 ">
+                        <div class="px-4 rounded-xl shadow-lg space-y-2 py-4 flex sm:space-y-0 sm:space-x-1 ">
                             <img class="mx-auto h-5 w-5 rounded-full sm:mx-0 sm:shrink-0 " src="img/Person1.jpg" alt="Woman 's Face" />
                             <p class="text-xs text-slate-500">
-                                Ryan R
+                                Ryn R
                             </p>
                             <span class="px-9"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
@@ -103,26 +96,22 @@
                         </div>
                     </li>
                     <li>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-1 ">
+                        <div class="px-4 rounded-xl shadow-lg space-y-2 py-4 flex sm:space-y-0 sm:space-x-1 ">
                             <img class="mx-auto h-5 w-5 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-kristin-vogt-61100.jpg" alt="Woman 's Face " />
                             <p class="text-xs text-slate-500 ">
                                 Bryana S
                             </p>
-                            <!-- <span class="px-6 "><svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 " stroke-width="1.5 " stroke="currentColor " class="w-4 h-4 "> -->
-                            <!-- <path stroke-linecap="round " stroke-linejoin="round " d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 -->
-                            <!-- 0 0 1 1.06 0Z " /> -->
-                            <!-- </svg></span> -->
-                            <span class="relative left-8 flex h-2 w-2">
+                            <span class="relative left-6 flex h-3 w-3">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-700"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-700"></span>
                             </span>
                         </div>
                     </li>
                     <li>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-1 ">
+                        <div class="px-4 rounded-xl shadow-lg space-y-2 py-4 flex sm:space-y-0 sm:space-x-1 ">
                             <img class="mx-auto h-5 w-5 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-andrea-piacquadio-813940.jpg " alt="Woman 's Face" />
                             <p class="text-xs text-slate-500">
-                                Keith P
+                                Keit P
                             </p>
                             <span class="px-9"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
@@ -130,18 +119,14 @@
                         </div>
                     </li>
                     <li>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-1 ">
+                        <div class="px-4 rounded-xl shadow-lg space-y-2 py-4 flex sm:space-y-0 sm:space-x-1 ">
                             <img class="mx-auto h-5 w-5 rounded-full sm:mx-0 sm:shrink-0 " src="img/CA.jpg" alt="Woman 's Face " />
                             <p class="text-xs text-slate-500 ">
                                 Charles D
                             </p>
-                            <!-- <span class="px-4 "><svg xmlns="http://www.w3.org/2000/svg " fill="none " viewBox="0 0 24 24 " stroke-width="1.5 " stroke="currentColor " class="w-4 h-4 "> -->
-                            <!-- <path stroke-linecap="round " stroke-linejoin="round " d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 -->
-                            <!-- 0 0 1 1.06 0Z " /> -->
-                            <!-- </svg></span> -->
-                            <span class="relative left-7 flex h-2 w-2">
+                            <span class="relative left-5 flex h-3 w-3">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-700"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-700"></span>
                             </span>
                         </div>
                     </li>
@@ -164,7 +149,7 @@
 
         </nav>
 
-        <section id="browse " lass=" w-full ">
+        <section id="browse " class=" w-full ">
             <div class="w-150 w-full h-24 border-b border-slate-600 shadow-md shadow-slate-700 ">
                 <div class="flex justify-between px-10 ">
                     <div class="mt-9 ">
