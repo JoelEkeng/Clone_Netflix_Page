@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
 </head>
 
 <body>
-    <main class="bg-black text-slate-50 flex grid-cols-2 gap-8">
+    <main class="contentAuto md:content-visibility-auto lg:content-visibility-auto xl:content-visibility-auto bg-black text-slate-50 flex grid-cols-2 gap-8">
         <!-- Navigation bar -->
-        <nav class="max-h-7xl w-full md:w-72 px-5 border-r border-slate-600 shadow-2xl shadow-slate-700">
+        <nav class="max-h-7xl w-full md:w-64 px-5 border-r border-slate-600 shadow-2xl shadow-slate-700">
             <header>
                 <div class="py-2">
                     <img src="img/Logo.png" width="150px" alt="Netflix Logo ">
@@ -188,7 +189,7 @@
                                 <path stroke-linecap="round " stroke-linejoin="round " d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714
                         0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0 " />
                               </svg>
-                            <span class="relative bottom-8 left-6 flex h-2 w-2">
+                            <span class="relative bottom-8 left-6 flex h-3 w-3">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-3 w-3 bg-red-700"></span>
                             </span>
@@ -219,21 +220,21 @@
                 </div><br>
 
 
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 md:px-8 lg:px-16">
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 md:px-8 lg:px-16">
 
                     <!-- Card 1 -->
                     <div class="bg-slate-950 rounded-t-lg">
                         <img src="img/black-history-month-collage.jpg" width="250px " class="h-48 rounded-t-lg ">
-                        <h2 class="px-4 text-lg font-bold ">THIS POWER</h2>
-                        <p class="px-4 ">THE KINGS OF POWER</p>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-2 ">
-                            <img class="block mx-auto h-6 w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/CA.jpg" alt="Woman 's Face " />
-                            <div class="text-center sm:text-left ">
-                                <div class="space-y-0.2 ">
-                                    <p class="text-lg text-white font-semibold ">
+                        <h2 class="px-4 text-xs font-bold sm:text-sm lg:text-base xl:text-lg">THIS POWER</h2>
+                        <p class="px-4 text-xs sm:text-sm lg:text-base xl:text-lg">THE KINGS OF POWER</p>
+                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg flex sm:space-y-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-2 ">
+                            <img class="block mx-auto h-4 w-4 sm:h-5 sm:w:5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/CA.jpg" alt="Woman 's Face " />
+                            <div>
+                                <div>
+                                    <p class="text-xs sm:text-sm lg:text-base xl:text-lg text-white font-semibold">
                                         Adam S.
                                     </p>
-                                    <p class="text-slate-200 font-small text-sm">
+                                    <p class="text-slate-200 font-small text-xs lg:text-sm">
                                         Director of film
                                     </p>
                                 </div>
@@ -244,16 +245,16 @@
                     <!-- Card 2 -->
                     <div class="bg-slate-950 rounded-t-lg ">
                         <img src="img/pexels-pixabay-266429.jpg" width="250px " class="h-48 rounded-t-lg ">
-                        <h2 class="px-4 text-lg font-bold ">THIS POWER</h2>
-                        <p class="px-4 ">THE KINGS OF POWER</p>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-2 ">
-                            <img class="block mx-auto h-6 w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-andrea-piacquadio-813940.jpg " alt="Woman 's Face " />
-                            <div class="text-center sm:text-left ">
-                                <div class="space-y-0.2 ">
-                                    <p class="text-lg text-white font-semibold ">
+                        <h2 class="px-4 text-xs font-bold sm:text-sm lg:text-base xl:text-lg ">THIS POWER</h2>
+                        <p class="px-4 px-4 text-xs sm:text-sm lg:text-base xl:text-lg">THE KINGS OF POWER</p>
+                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg flex sm:space-y-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-2  ">
+                            <img class="block mx-auto h-4 w-4 sm:h-5 sm:w:5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-andrea-piacquadio-813940.jpg " alt="Woman 's Face " />
+                            <div>
+                                <div>
+                                    <p class="text-xs sm:text-sm lg:text-base xl:text-lg text-white font-semibold">
                                         Adam S.
                                     </p>
-                                    <p class="text-slate-200 font-small text-sm ">
+                                    <p class="text-slate-200 font-small text-xs lg:text-sm">
                                         Director of film
                                     </p>
                                 </div>
@@ -262,18 +263,18 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-slate-950 rounded-t-lg">
-                        <img src="img/pexels-mikhail-nilov-7662301.jpg" width="250px " class="h-48 rounded-t-lg ">
-                        <h2 class="px-4 text-lg font-bold ">THIS POWER</h2>
-                        <p class="px-4 ">THE KINGS OF POWER</p>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-2 ">
-                            <img class="block mx-auto h-6 w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/Person1.jpg" alt="Woman 's Face " />
-                            <div class="text-center sm:text-left ">
-                                <div class="space-y-0.2 ">
-                                    <p class="text-lg text-white font-semibold ">
+                    <div class="bg-slate-950 rounded-t-lg ">
+                        <img src="img/pexels-pixabay-163443.jpg " width="250px " class="h-48 rounded-t-lg ">
+                        <h2 class="px-4 text-xs font-bold sm:text-sm lg:text-base xl:text-lg ">THIS POWER</h2>
+                        <p class="px-4 px-4 text-xs sm:text-sm lg:text-base xl:text-lg">THE KINGS OF POWER</p>
+                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg flex sm:space-y-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-2  ">
+                            <img class="block mx-auto h-4 w-4 sm:h-5 sm:w:5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-justin-shaifer-1222271.jpg" alt="Woman 's Face " />
+                            <div>
+                                <div>
+                                    <p class="text-xs sm:text-sm lg:text-base xl:text-lg text-white font-semibold">
                                         Adam S.
                                     </p>
-                                    <p class="text-slate-200 font-small text-sm">
+                                    <p class="text-slate-200 font-small text-xs lg:text-sm">
                                         Director of film
                                     </p>
                                 </div>
@@ -282,38 +283,18 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-slate-950 rounded-t-lg ">
-                        <img src="img/pexels-pixabay-163443.jpg " width="250px " class="h-48 rounded-t-lg ">
-                        <h2 class="px-4 text-lg font-bold ">THIS POWER</h2>
-                        <p class="px-4 ">THE KINGS OF POWER</p>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-2 ">
-                            <img class="block mx-auto h-6 w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-justin-shaifer-1222271.jpg" alt="Woman 's Face " />
-                            <div class="text-center sm:text-left ">
-                                <div class="space-y-0.2 ">
-                                    <p class="text-lg text-white font-semibold ">
-                                        Adam S.
-                                    </p>
-                                    <p class="text-slate-200 font-small text-sm">
-                                        Director of film
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
                     <div class="bg-slate-950 round-t-lg">
                         <img src="img/halloween-wallpaper-with-zombie-hand.jpg " width="250px " class="h-48 rounded-t-lg ">
-                        <h2 class="px-4 text-lg font-bold ">THIS POWER</h2>
-                        <p class="px-4 ">THE KINGS OF POWER</p>
-                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-2 ">
-                            <img class="block mx-auto h-6 w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-kristin-vogt-61100.jpg" alt="Woman 's Face " />
-                            <div class="text-center sm:text-left ">
-                                <div class="space-y-0.2 ">
-                                    <p class="text-lg text-white font-semibold ">
+                        <h2 class="px-4 text-xs font-bold sm:text-sm lg:text-base xl:text-lg ">THIS POWER</h2>
+                        <p class="px-4 px-4 text-xs sm:text-sm lg:text-base xl:text-lg">THE KINGS OF POWER</p>
+                        <div class="px-4 max-w-sm mx-auto rounded-xl shadow-lg flex sm:space-y-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-2  ">
+                            <img class="block mx-auto h-4 w-4 sm:h-5 sm:w:5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 rounded-full sm:mx-0 sm:shrink-0 " src="img/pexels-kristin-vogt-61100.jpg" alt="Woman 's Face " />
+                            <div>
+                                <div>
+                                    <p class="text-xs sm:text-sm lg:text-base xl:text-lg text-white font-semibold">
                                         Adam S.
                                     </p>
-                                    <p class="text-slate-200 font-small text-sm">
+                                    <p class="text-slate-200 font-small text-xs lg:text-sm">
                                         Director of film
                                     </p>
                                 </div>
